@@ -1,0 +1,8 @@
+{
+  "name": "facebook-scalajs",
+  "version": "0.3.1",
+  "private": true,
+  "dependencies": {
+    "source-map": "^0.5.6"
+  }
+}
