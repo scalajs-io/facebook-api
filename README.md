@@ -2,18 +2,18 @@ Facebook API for Scala.js
 ================================
 A Scala.js type-safe binding for the Facebook SDK.
 
-#### Build Dependencies
+### Build Dependencies
 
-* [ScalaJs.io v0.3.x](https://github.com/ldaniels528/scalajs.io)
+* [ScalaJs.io v0.3.x](https://github.com/scalajs-io/scalajs.io)
 * [SBT v0.13.13](http://www.scala-sbt.org/download.html)
 
-#### Build/publish the SDK locally
+### Build/publish the SDK locally
 
 ```bash
  $ sbt clean publish-local
 ```
 
-#### Running the tests
+### Running the tests
 
 Before running the tests the first time, you must ensure the npm packages are installed:
 
@@ -27,7 +27,7 @@ Then you can run the tests:
 $ sbt test
 ```
 
-#### Examples
+### Examples
 
 Inside of your HTML index page:
 
@@ -117,7 +117,7 @@ FB.login((response: js.UndefOr[FacebookLoginStatusResponse]) =>
 )     
 ```
 
-#### Artifacts and Resolvers
+### Artifacts and Resolvers
 
 To add the `Facebook` binding to your project, add the following to your build.sbt:  
 
