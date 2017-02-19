@@ -122,7 +122,7 @@ FB.login((response: js.UndefOr[FacebookLoginStatusResponse]) =>
 To add the `Facebook` binding to your project, add the following to your build.sbt:  
 
 ```sbt
-libraryDependencies += "io.scalajs.npm" %%% "facebook" % "1.0.2"
+libraryDependencies += "io.scalajs" %%% "facebook-api" % "1.0.2"
 ```
 
 Optionally, you may add the Sonatype Repository resolver:

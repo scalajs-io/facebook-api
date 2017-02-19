@@ -14,8 +14,8 @@ homepage := Some(url("https://github.com/scalajs.io/facebook"))
 lazy val root = (project in file(".")).
   enablePlugins(ScalaJSPlugin).
   settings(
-    name := "facebook-sdk",
-    organization := "io.scalajs.npm",
+    name := "facebook-api",
+    organization := "io.scalajs",
     description := "Facebook API bindings for Scala.js",
     version := apiVersion,
     scalaVersion := scalaJsVersion,
