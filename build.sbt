@@ -5,8 +5,8 @@ import sbt._
 
 import scala.language.postfixOps
 
-val apiVersion = "0.1.0"
 val scalaJsIOVersion = "0.3.0.5"
+val apiVersion = scalaJsIOVersion
 val scalaJsVersion = "2.12.1"
 
 homepage := Some(url("https://github.com/scalajs.io/facebook"))
