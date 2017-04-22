@@ -1,7 +1,7 @@
 package io.scalajs.social
 
 import scala.scalajs.js
-import scala.scalajs.js.annotation.JSName
+import scala.scalajs.js.annotation.JSGlobal
 
 /**
   * Facebook package object
@@ -13,7 +13,7 @@ package object facebook {
     * Facebook Singleton
     */
   @js.native
-  @JSName("FB")
+  @JSGlobal("FB")
   object FB extends Facebook
 
 }
