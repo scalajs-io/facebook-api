@@ -4,7 +4,7 @@ A Scala.js type-safe binding for the Facebook SDK.
 
 ### Build Dependencies
 
-* [SBT v0.13.13](http://www.scala-sbt.org/download.html)
+* [SBT v0.13.16](http://www.scala-sbt.org/download.html)
 
 ### Build/publish the SDK locally
 
@@ -121,7 +121,7 @@ FB.login((response: js.UndefOr[FacebookLoginStatusResponse]) =>
 To add the `Facebook` binding to your project, add the following to your build.sbt:  
 
 ```sbt
-libraryDependencies += "io.scalajs" %%% "facebook-api" % "0.4.0"
+libraryDependencies += "io.scalajs" %%% "facebook-api" % "0.4.1"
 ```
 
 Optionally, you may add the Sonatype Repository resolver:
