@@ -1,20 +1,17 @@
 package io.scalajs.social.facebook
 
 import scala.scalajs.js
-import scala.scalajs.js.annotation.ScalaJSDefined
+
 
 /**
   * Facebook Command
   * @author lawrence.daniels@gmail.com
   */
-@ScalaJSDefined
-class FacebookCommand extends js.Object {
-  var app_id: js.UndefOr[String]  = _
-  var caption: js.UndefOr[String] = _
-  var method: js.UndefOr[String]  = _
-  var link: js.UndefOr[String]    = _
-  var href: js.UndefOr[String]    = _
-}
+class FacebookCommand(var app_id: js.UndefOr[String],
+                      var method: js.UndefOr[String],
+                      var link: js.UndefOr[String] = js.undefined,
+                      var href: js.UndefOr[String] = js.undefined,
+                      var caption: js.UndefOr[String] = js.undefined) extends js.Object
 
 /**
   * Facebook Command Companion Object
@@ -26,13 +23,11 @@ object FacebookCommand {
             method: js.UndefOr[String],
             link: js.UndefOr[String] = js.undefined,
             href: js.UndefOr[String] = js.undefined,
-            caption: js.UndefOr[String] = js.undefined) = {
-    val command = new FacebookCommand()
-    command.app_id = app_id
-    command.method = method
-    command.href = href
-    command.link = link
-    command
-  }
+            caption: js.UndefOr[String] = js.undefined) = new FacebookCommand(
+    app_id = app_id,
+    method = method,
+    href = href,
+    link = link
+  )
 
 }

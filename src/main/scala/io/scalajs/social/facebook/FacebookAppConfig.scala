@@ -1,19 +1,12 @@
 package io.scalajs.social.facebook
 
 import scala.scalajs.js
-import scala.scalajs.js.annotation.ScalaJSDefined
 
 /**
   * Facebook Application Configuration
   * @author lawrence.daniels@gmail.com
   */
-@ScalaJSDefined
-class FacebookAppConfig extends js.Object {
-  var appId: String   = _
-  var status: Boolean = _
-  var xfbml: Boolean  = _
-  var version: String = _
-}
+class FacebookAppConfig(var appId: String, var status: Boolean, var xfbml: Boolean, var version: String) extends js.Object
 
 /**
   * Facebook Application Configuration Companion Object
@@ -21,12 +14,11 @@ class FacebookAppConfig extends js.Object {
   */
 object FacebookAppConfig {
 
-  def apply(appId: String, status: Boolean = true, xfbml: Boolean = true, version: String = "v2.5") = {
-    val config = new FacebookAppConfig()
-    config.appId = appId
-    config.status = status
-    config.xfbml = xfbml
-    config.version = version
-    config
-  }
+  def apply(appId: String, status: Boolean = true, xfbml: Boolean = true, version: String = "v2.5") = new FacebookAppConfig(
+    appId = appId,
+    status = status,
+    xfbml = xfbml,
+    version = version
+  )
+
 }
